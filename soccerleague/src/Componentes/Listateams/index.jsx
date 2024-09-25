@@ -3,10 +3,10 @@ import './style.css';
 
 // Feito
 
-const ListaTeams = ({teams, carregaTeams }) => {
+const ListaTeams = ({teams, carregaTeams, excluir}) => {
     return(
         <div className='lista'> {teams.map(
-             (p)=> (<Team valor={p} carregaTeams={carregaTeams}></Team>) 
+             (p)=> (<Team valor={p} carregaTeams={carregaTeams} excluir={excluir}></Team>) 
         )} 
         </div>
     );

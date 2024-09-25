@@ -5,9 +5,13 @@ import './style.css';
 export default function PaginaCadastroTeam(){
     return(
         <>
+            <div className="body">
             <BarraMenu/>
+
             <div className="cadastro-section">
                 <CadastroTeams />
+            </div>
+
             </div>
         </>
     );

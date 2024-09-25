@@ -66,7 +66,7 @@ class BarraMenu extends React.Component {
             <MenuLink href="/CadastroTeam">Cadastrar Time</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink href="#">Excluir Times</MenuLink>
+            <MenuLink href="/ExcluirTeam">Excluir Times</MenuLink>
           </MenuItem>
         </MenuList>
       </Nav>

@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import PaginaCadastroTeam from './Page/cadastroPage/PageCadastroTeam';
+import PaginaExcluirTeam from './Page/excluirPage/PageExcluirTeam';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App/>}/>
         <Route path="/CadastroTeam" element={<PaginaCadastroTeam/>}/>
+        <Route path="/ExcluirTeam" element={<PaginaExcluirTeam/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

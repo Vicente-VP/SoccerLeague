@@ -21,6 +21,8 @@ export default function CadastroTeams({carregaTeams}) {
                     <form>
                         <label>Nome Time:</label>
                         <input type="text" id="nome" name="nome"></input> <br/>
+                        <label>Escudo</label>
+                        <input type="text" id="escudo" name="escudo"></input><br/>
                         <label>Treinador:</label>
                         <input type="text" id="treinador" name="treinador"></input> <br/>
                         <label>Presidente</label>
@@ -29,14 +31,12 @@ export default function CadastroTeams({carregaTeams}) {
                         <input type="text" id="estadio" name="estadio"></input><br/>
                         <label>Cidade</label>
                         <input type="text" id="cidade" name="cidade"></input><br/>
-                        <label>Escudo</label>
-                        <input type="text" id="escudo" name="escudo"></input><br/>
-                        <button type="button" onClick={adicionaProduto}>Adicionar</button>
+                        <button type="button" onClick={adicionaTeam}>Adicionar</button>
                     </form>
                 </div>
             </div>
     );
-    function adicionaProduto(){
+    function adicionaTeam(){
         const nome_team = document.getElementById('nome').value;
         const coach = document.getElementById('treinador').value;
         const president = document.getElementById('presidente').value;

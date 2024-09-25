@@ -23,8 +23,8 @@ function App() {
       <BarraMenu/>
       <center><h1>Bem Vindo a Soccer League</h1></center>
       <div className='teams-section'>
-        <h1>Lista de Times</h1>
-        <ListaTeams teams={teams} carregaTeams={carregaTeams}></ListaTeams>
+        <h2>Lista de Times</h2>
+        <ListaTeams teams={teams} carregaTeams={carregaTeams} excluir={false}></ListaTeams>
       </div>
     </div>
   );
