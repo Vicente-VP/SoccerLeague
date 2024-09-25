@@ -1,27 +1,39 @@
 import axios from "axios";
+import styled from "styled-components";
+import Logo from "../../Images/Logo_soccerLeague.png";
+import './style.css';
+
+const Logo_CadsoccerLeague = styled.img`
+  width: 295px;
+  height: 305px;
+`;
 
 // Feito
 
 export default function CadastroTeams({carregaTeams}) {
     return(
-            <div className="cardProd">
-                <h3 className="titulo"> Cadastro de Times</h3>
-                <form>
-                    <label>Nome Time:</label>
-                    <input type="text" id="nome" name="nome"></input> <br/>
-                    <label>Treinador:</label>
-                    <input type="text" id="treinador" name="treinador"></input> <br/>
-                    <label>Presidente</label>
-                    <input type="text" id="presidente" name="presidente"></input><br/>
-                    <label>Estádio</label>
-                    <input type="text" id="estadio" name="estadio"></input><br/>
-                    <label>Cidade</label>
-                    <input type="text" id="cidade" name="cidade"></input><br/>
-                    <label>Escudo</label>
-                    <input type="text" id="escudo" name="escudo"></input><br/>
-                    
-                    <button type="button" onClick={adicionaProduto}>Adicionar</button>
-                </form>
+            <div className="cardCad">
+                <div className="text-section">
+                    <Logo_CadsoccerLeague src={Logo} alt="Logo" />
+                    <h2>Venha participar da Liga</h2>
+                </div>
+                <div className="form-section">
+                    <form>
+                        <label>Nome Time:</label>
+                        <input type="text" id="nome" name="nome"></input> <br/>
+                        <label>Treinador:</label>
+                        <input type="text" id="treinador" name="treinador"></input> <br/>
+                        <label>Presidente</label>
+                        <input type="text" id="presidente" name="presidente"></input><br/>
+                        <label>Estádio</label>
+                        <input type="text" id="estadio" name="estadio"></input><br/>
+                        <label>Cidade</label>
+                        <input type="text" id="cidade" name="cidade"></input><br/>
+                        <label>Escudo</label>
+                        <input type="text" id="escudo" name="escudo"></input><br/>
+                        <button type="button" onClick={adicionaProduto}>Adicionar</button>
+                    </form>
+                </div>
             </div>
     );
     function adicionaProduto(){

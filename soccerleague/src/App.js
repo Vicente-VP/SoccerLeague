@@ -12,18 +12,20 @@ function App() {
   }, []);
 
   function carregaTeams(){
-    axios.get('https://project-ea-football.onrender.com/teams')
+      axios.get('https://project-ea-football.onrender.com/teams')
       .then (res=>{
         setTeams(res.data);
       console.log(teams);
   });
   }
   return (
-    <div>
+    <div className='principal'>
       <BarraMenu/>
       <center><h1>Bem Vindo a Soccer League</h1></center>
-      <h1>Lista Produtos</h1>
-      <ListaTeams teams={teams} carregaTeams={carregaTeams}></ListaTeams>
+      <div className='teams-section'>
+        <h1>Lista de Times</h1>
+        <ListaTeams teams={teams} carregaTeams={carregaTeams}></ListaTeams>
+      </div>
     </div>
   );
 }
