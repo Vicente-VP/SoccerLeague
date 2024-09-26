@@ -25,7 +25,10 @@ const Team = ({valor, carregaTeams, excluir}) => {
     )
     function remover(id){
         let api = "https://project-ea-football.onrender.com/teams";
-        axios.delete(`${api}/${id}`).then(()=>carregaTeams());
+        axios.delete(`${api}/${id}`)
+            .then(()=>{
+                carregaTeams()
+            });
     }
 }
 

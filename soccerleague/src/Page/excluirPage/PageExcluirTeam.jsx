@@ -21,9 +21,9 @@ export default function PaginaExcluirTeam() {
     return (
       <div className='principal'>
         <BarraMenu/>
-        <center><h1>Bem Vindo a Soccer League</h1></center>
+        
         <div className='teams-section'>
-          <h1>Lista de Times</h1>
+          <center><h1>Exclusão de times</h1></center>
           <ListaTeams teams={teams} carregaTeams={carregaTeams} excluir={true}></ListaTeams>
         </div>
       </div>
