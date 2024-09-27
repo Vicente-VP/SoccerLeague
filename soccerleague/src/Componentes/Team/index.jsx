@@ -20,15 +20,17 @@ const Team = ({valor, carregaTeams, excluir}) => {
                     <span className='subtitulo'><span>Cidade: </span>{valor.city}</span>
                 </div>
             </div>
-                <MdDelete className={`icone  ${IsExcluir === true ? 'active' : ''}`} onClick={()=>remover(valor.id)}/>
+                <MdDelete className={`icone  ${IsExcluir === true ? 'active' : ''}`} onClick={()=>remover(valor._id)}/>
         </div> 
     )
     function remover(id){
         let api = "https://project-ea-football.onrender.com/teams";
+        console.log(id)
         axios.delete(`${api}/${id}`)
             .then(()=>{
                 carregaTeams()
-            });
+            }).catch((message)=> console.log(message));
+            
     }
 }
 
