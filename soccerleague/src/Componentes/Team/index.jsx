@@ -15,12 +15,12 @@ const Team = ({valor, carregaTeams, excluir}) => {
             <div className='conteudo-section'>
                 <div className='conteudo'>
                     <span className='subtitulo'><span>Treinador: </span>{valor.coach}</span>
-                    <span className='subtitulo'><span>President: </span>{valor.president}</span>
+                    <span className='subtitulo'><span>Presidente: </span>{valor.president}</span>
                     <span className='subtitulo'><span>Estádio: </span>{valor.stadium}</span>
                     <span className='subtitulo'><span>Cidade: </span>{valor.city}</span>
                 </div>
             </div>
-                <MdDelete className={`icone  ${IsExcluir === true ? 'active' : ''}`} onClick={()=>remover(valor._id)}/>
+                <center><MdDelete className={`icone  ${IsExcluir === true ? 'active' : ''}`} onClick={()=>remover(valor._id)}/></center>
         </div> 
     )
     function remover(id){

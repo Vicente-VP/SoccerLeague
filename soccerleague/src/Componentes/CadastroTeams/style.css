@@ -38,13 +38,25 @@
 
     border-left: 1px solid black;
     border-radius: 0px 20px 20px 0px;
-    font-weight: 250;
-    background-color: #dc95db;
-    color: #230a1b;
+    font-weight: 300;
+    background: rgb(35,10,27);
+    background: linear-gradient(260deg, rgba(35,10,27,1) 0%, rgba(86,31,82,1) 35%, rgba(111,41,110,1) 100%);
+    color: #ffffff;
 
     width: 55%;
 }
 
+input{
+    border: none;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    outline: none;
+}
+
+label{
+    width: 90px;
+    display: inline-block;
+}
 
 button{
     border: none;
@@ -52,6 +64,21 @@ button{
     background-color: rgba(69, 2, 120, 0.545);
     color: rgb(255, 255, 255);
 
-    height: 90px;
-    width: 150px
+    height: 65px;
+    width: 160px;
+
+    font-size: 20px;
+}
+
+button:hover{
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(69, 2, 120, 0.934);
+    color: rgb(255, 255, 255);
+
+    height: 70px;
+    width: 170px;
+
+    font-size: 20px;
+    cursor: pointer;
 }
